@@ -15,6 +15,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
     public cadastroVIEW() {
         initComponents();
         // commit 1
+        // commit 2
     }
 
     /**
