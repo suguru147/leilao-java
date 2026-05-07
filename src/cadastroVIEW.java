@@ -14,10 +14,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
      */
     public cadastroVIEW() {
         initComponents();
-        // commit 1
-        // commit 2
-        // commit 3
-        // commit 4
+        // commit
     }
 
     /**
@@ -144,7 +141,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
     }//GEN-LAST:event_cadastroNomeActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-      try {
+     try {
         ProdutosDTO produto = new ProdutosDTO();
         String nome = cadastroNome.getText();
         String valor = cadastroValor.getText();
@@ -168,7 +165,8 @@ public class cadastroVIEW extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void btnProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProdutosActionPerformed
-        listagemVIEW listagem = new listagemVIEW(); listagem.setVisible(true);
+        listagemVIEW listagem = new listagemVIEW();
+        listagem.setVisible(true);
     }//GEN-LAST:event_btnProdutosActionPerformed
 
     /**
