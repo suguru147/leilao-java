@@ -18,7 +18,6 @@ public class listagemVIEW extends javax.swing.JFrame {
      */
    public listagemVIEW() {
     initComponents();
-    setLocationRelativeTo(null);
     listarProdutos();
 }
 
@@ -158,8 +157,8 @@ public class listagemVIEW extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVenderActionPerformed
 
     private void btnVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendasActionPerformed
-        vendasVIEW vendas = new vendasVIEW();
-        vendas.setVisible(true);
+          vendasVIEW vendas = new vendasVIEW();
+    vendas.setVisible(true);
     }//GEN-LAST:event_btnVendasActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
@@ -223,7 +222,7 @@ public class listagemVIEW extends javax.swing.JFrame {
 
         ArrayList<ProdutosDTO> listagem = produtosdao.listarProdutos();
 
-        for (int i = 0; i < listagem.size(); i++){
+        for(int i = 0; i < listagem.size(); i++){
             model.addRow(new Object[]{
                 listagem.get(i).getId(),
                 listagem.get(i).getNome(),
@@ -236,3 +235,4 @@ public class listagemVIEW extends javax.swing.JFrame {
     }
 }
 }
+

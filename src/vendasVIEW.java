@@ -33,8 +33,7 @@ public class vendasVIEW extends JFrame {
 
         listarVendas();
     }
-// commit atividade 3
-    // - -
+
     private void listarVendas() {
         try {
             ProdutosDAO produtosdao = new ProdutosDAO();
